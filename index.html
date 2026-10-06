@@ -54,30 +54,7 @@
             color: #2997ff;
         }
 
-        /* =========================================================
-           DISPOSICIÓN PRINCIPAL EN DOS COLUMNAS (FLEXBOX)
-           ========================================================= */
-        main {
-            display: flex;
-            gap: 20px;
-            padding: 20px;
-            align-items: flex-start; /* Evita que la columna lateral se estire verticalmente */
-        }
 
-        /* Columna izquierda: abarca más espacio (flex: 2) */
-        .contenido-principal {
-            flex: 2;
-        }
-
-        /* Columna derecha: formulario fijo como barra lateral (flex: 1) */
-        #contacto {
-            flex: 1;
-            background-color: #f9f9f9;
-            padding: 15px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-        }
-        
         /* Ajuste para mantener las dimensiones de las imágenes de la tabla */
         .img {
             width: 100px;                    
@@ -100,7 +77,7 @@
         <a href="#inicio">Inicio</a>
         <a href="#iPhone">iPhone</a>
         <a href="#iPad">iPad y Mac</a>
-        <a href="#contacto">Contacto</a>
+        <a href="formulario.html">Contacto</a>
     </nav>
 
     <!-- Contenido principal organizado en dos columnas -->
@@ -115,12 +92,12 @@
                 <table border="1">
                     <thead>
                         <tr>
-                            <th>Imagen</th>
-                            <th>Gama / Modelo</th>
-                            <th>Uso Recomendado</th>
-                            <th>Pantalla</th>
-                            <th>Cámara</th>
-                            <th>Punto Fuerte</th>
+                            <th style="background-color: #737373;">Imagen</th>
+                            <th style="background-color: #737373;">Gama / Modelo</th>
+                            <th style="background-color: #737373;">Uso Recomendado</th>
+                            <th style="background-color: #737373;">Pantalla</th>
+                            <th style="background-color: #737373;">Cámara</th>
+                            <th style="background-color: #737373;">Punto Fuerte</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -234,45 +211,10 @@
 
         </div>
 
-        <!-- COLUMNA DERECHA: Formulario de Contacto  -->
-        <section id="contacto">
-            <h2>Contacto</h2>
-            <p>Agrega tu contacto para recibir información actualizada de iPhone.</p>
-            
-            <form action="#" method="post">
-                <!-- Campo de Nombre -->
-                    Nombre completo:<br>
-                    <input type="text" id="nombre" name="nombre" class="form-control" required><br>
-
-                <!-- Campo de Correo Electrónico -->
-                    Correo electrónico:<br>
-                    <input type="email" id="email" name="email" class="form-control" required><br>
-
-                <!-- Formulario Checkboxes para elegir varias opciones -->
-                    Notificaciones que desea recibir:<br>
-                            <input type="checkbox" name="notificaciones" value="lanzamientos">
-                            Nuevos Lanzamientos<br>
-                        
-                            <input type="checkbox" name="notificaciones" value="terminos">
-                            Actualización de términos y condiciones<br>
-                        
-                            <input type="checkbox" name="notificaciones" value="ofertas">
-                            Ofertas y Compras<br>
-                        
-                            <input type="checkbox" name="notificaciones" value="soporte">
-                            Soporte y Ayuda<br>
-
-                <!-- Botón de Enviar -->
-                <p>
-                    <button type="submit">Enviar</button>
-                </p>
-            </form>
-        </section>
-
     </main>
 
     <!-- Pie de Página -->
-    <footer>
+    <footer align="center">
         <p>Adame Durán Brenda Denis 0783 | Programación 5J</p>
     </footer>
 
